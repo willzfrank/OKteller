@@ -1,0 +1,242 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&family=Tangerine:wght@700&display=swap");
+
+:root {
+  --first__color: #4c8a19;
+  --second__color: #acf181;
+  --third__color: black;
+  --fourth__color: #949c8c;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none !important;
+}
+
+a:hover {
+  color: var(--first__color) !important;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* BODY */
+
+body {
+  margin: 1rem 2rem;
+  font-family: "Montserrat", sans-serif;
+}
+.sidebar__link {
+  text-decoration: none;
+  color: #949c8c;
+  transition: 0.1s ease-in-out;
+}
+.sidebar__link:hover {
+  color: #4c8a19;
+}
+
+::-webkit-scrollbar {
+  width: 0.6rem;
+  background-color: #4c8a19;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #acf181;
+}
+
+/* HEADER */
+header {
+  position: relative;
+  margin-top: 10px;
+}
+
+.header__img {
+  border: 2px solid var(--fourth__color);
+  height: 300px;
+  border-radius: 10px;
+}
+
+.content {
+  position: absolute;
+  top: 50;
+  left: 50;
+  padding-top: 50px;
+}
+
+.content h5 {
+  color: white;
+  font-size: 90px;
+  z-index: 3;
+  font-family: "Tangerine", cursive;
+}
+/* CONTACT US */
+.form__btn {
+  background-color: none;
+  border: 0;
+  box-sizing: border-box;
+  box-shadow: inset 0 0 0 2px var(--fourth__color);
+  color: var(--fourth__color) !important;
+  font-weight: bold !important;
+  position: relative;
+  vertical-align: middle;
+  padding: 1em 2em;
+}
+
+.form__btn::before,
+.form__btn::after {
+  box-sizing: inherit !important;
+  content: "" !important;
+  position: absolute !important;
+  width: 100% !important;
+  height: 100% !important;
+  top: 0 !important;
+  left: 0 !important;
+  height: 100% !important;
+  width: 100% !important;
+  transform: center !important;
+}
+
+.form__btn:hover {
+  color: var(--second__color) !important;
+}
+
+.form__btn::before {
+  border-top: 2px solid var(--second__color) !important;
+  border-bottom: 2px solid var(--second__color);
+  transform: scale3d(0, 1, 1) !important;
+}
+
+.form__btn::after {
+  border-left: 2px solid var(--second__color) !important;
+  border-right: 2px solid var(--second__color) !important;
+  transform: scale3d(1, 0, 1);
+}
+
+.form__btn:hover::before,
+.form__btn:hover::after {
+  transform: scale3d(1, 1, 1) !important;
+  transition: transform 1s !important;
+}
+
+/* FOOTER */
+footer {
+  font-family: "Montserrat", sans-serif;
+  background: linear-gradient(to right, white, var(--second__color));
+}
+
+h6 {
+  font-size: 1.3rem !important;
+  letter-spacing: 0.2rem;
+  color: var(--fourth__color);
+  font-weight: bold !important;
+}
+
+.fa {
+  font-size: 1.5rem;
+  margin-right: 1rem;
+}
+
+.fa-twitter:hover {
+  color: white;
+  border: 1px solid var(--fourth__color);
+  border-radius: 50%;
+  background-color: #1da1f2;
+}
+
+.fa-twitter {
+  color: #1da1f2;
+}
+
+.fa-facebook:hover {
+  color: white;
+  border: 1px solid var(--fourth__color);
+  border-radius: 50%;
+  background-color: #3b5998;
+}
+
+.fa-facebook {
+  color: #3b5998;
+}
+
+.fa-instagram:hover {
+  color: white;
+  border: 1px solid var(--fourth__color);
+  border-radius: 50%;
+  background-color: #cd486b;
+}
+
+.fa-instagram {
+  color: #cd486b;
+}
+
+.form-control::placeholder {
+  font-size: 0.95rem;
+  color: #aaa;
+  font-style: italic;
+}
+
+.form-control.shadow-0:focus {
+  box-shadow: none;
+}
+
+.footer__logo {
+  width: 50px;
+}
+
+/* for desktop */
+.whatsapp_float {
+  position: fixed;
+  width: 60px;
+  height: 60px;
+  bottom: 40px;
+  right: 40px;
+  background-color: #25d366;
+  color: #fff;
+  border-radius: 50px;
+  text-align: center;
+  font-size: 30px;
+  box-shadow: 2px 2px 3px #999;
+  z-index: 100;
+  cursor: pointer;
+}
+
+.whatsapp_float:hover {
+  transform: translateY(-1rem);
+}
+
+.whatsapp-icon {
+  margin-top: 16px;
+}
+
+/* for mobile */
+@media screen and (max-width: 767px) {
+  .whatsapp-icon {
+    margin-top: 10px;
+  }
+
+  .whatsapp_float {
+    width: 40px;
+    height: 40px;
+    bottom: 20px;
+    right: 10px;
+    font-size: 22px;
+  }
+}
+.bgimage {
+  width: 100%;
+  height: 500px;
+  background: url("https://images.unsplash.com/photo-1438109491414-7198515b166b?q=80&fm=jpg&s=cbdabf7a79c087a0b060670a6d79726c");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+}
+.bgimage h5 {
+  color: white;
+  text-shadow: 2px 2px #333;
+}
