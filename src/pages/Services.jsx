@@ -107,10 +107,16 @@ const Section = styled.section`
       width: max-content;
       padding: 1rem 2rem;
       border-bottom: 0.1rem solid #4c8a19;
+      font-family: "Montserrat", sans-serif;
       &:hover {
         transition:2s
-        border-bottom: 2px solid #4c8a19;
+        border-bottom: 2px solid #a5b895;
         transform: translateY(-.5rem);
+        // color:white;
+      }
+
+      &:focus{
+        color:white;
       }
     }
   }

@@ -26,18 +26,38 @@ function Footer() {
             </p>
             <ul className="list-inline mt-4">
               <li className="list-inline-item">
-                <a href="#" target="_blank" title="twitter">
+                <a
+                  href="http://twitter.com/okteller_ng"
+                  target="_blank"
+                  title="twitter"
+                  rel="noreferrer"
+                >
                   <i className="fa fa-twitter"></i>
                 </a>
               </li>
               <li className="list-inline-item">
-                <a href="#" target="_blank" title="facebook">
+                <a href="#" target="_blank" title="facebook" rel="noreferrer">
                   <i className="fa fa-facebook"></i>
                 </a>
               </li>
               <li className="list-inline-item">
-                <a href="#" target="_blank" title="instagram">
+                <a
+                  href="http://instagram.com/okteller_ng"
+                  target="_blank"
+                  title="instagram"
+                  rel="noreferrer"
+                >
                   <i className="fa fa-instagram"></i>
+                </a>
+              </li>
+              <li className="list-inline-item">
+                <a
+                  href="http://instagram.com/okteller_ng"
+                  target="_blank"
+                  title="instagram"
+                  rel="noreferrer"
+                >
+                  <i className="fa fa-linkedin"></i>
                 </a>
               </li>
             </ul>
@@ -51,8 +71,8 @@ function Footer() {
                 </Link>
               </li>
               <li className="mb-2">
-                <Link to="/services" className="text-muted">
-                  Our Services
+                <Link to="/okexchange" className="text-muted">
+                  Ok Exchange
                 </Link>
               </li>
               <li className="mb-2">
@@ -66,12 +86,15 @@ function Footer() {
             <h6 className="text-uppercase font-weight-bold mb-4">Pages</h6>
             <ul className="list-unstyled mb-0">
               <li className="mb-2">
-                <a href="#" className="text-muted">
+                <a href="https://vtu.okteller.com.ng/" className="text-muted">
                   Login
                 </a>
               </li>
               <li className="mb-2">
-                <a href="#" className="text-muted">
+                <a
+                  href="https://vtu.okteller.com.ng/register.php"
+                  className="text-muted"
+                >
                   Register
                 </a>
               </li>
@@ -112,11 +135,18 @@ function Footer() {
       <div className="bg-light py-4">
         <div className="container text-center">
           <p className="text-muted mb-0 py-2">
-            © 2021 OKteller All rights reserved.
+            © {new Date().getFullYear()} OKteller All rights reserved. ||
+            Designed by WillzFrank.
           </p>
         </div>
       </div>
-      <BsWhatsapp className="whatsapp_float" />
+      <a
+        href="https://wa.me/+2347033267307"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        <BsWhatsapp className="whatsapp_float" />
+      </a>
     </footer>
   );
 }

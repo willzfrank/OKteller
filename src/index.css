@@ -123,6 +123,10 @@ header {
   transition: transform 1s !important;
 }
 
+.alert-danger {
+  width: 60%;
+}
+
 /* FOOTER */
 footer {
   font-family: "Montserrat", sans-serif;

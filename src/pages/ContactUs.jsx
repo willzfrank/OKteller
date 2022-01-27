@@ -105,10 +105,10 @@ class ContactUs extends React.Component {
         <Layout>
           <Section id="contactus" className="mx-5">
             <div className="card shadow-lg border-0 px-3 rounded-2 mb-3 py-4 mx-auto mt-5 form__main-container">
-              <div className="card-header bg-transparent border-0 text-center text-uppercase form__container">
-                <h3>Contact Form</h3>
-              </div>
               <div className="card-body form__main-box">
+                <div className="card-header bg-transparent border-0 text-center form__container">
+                  <h3>Get In Touch</h3>
+                </div>
                 <form
                   action="/"
                   onSubmit={(e) => this.handleSubmit(e)}
@@ -129,7 +129,7 @@ class ContactUs extends React.Component {
                       onBlur={this.handleBlur}
                     />
                     {nameError ? (
-                      <div className="alert alert-danger mt-0">
+                      <div className="alert alert-danger mt-0 w-60">
                         Name is a required field.
                       </div>
                     ) : (
@@ -138,7 +138,7 @@ class ContactUs extends React.Component {
                   </div>
                   <div className="form-group my-3">
                     <label className="mb-2">
-                      Your email<span className="text-danger">*</span>
+                      Your email<span className="text-danger w-60">*</span>
                     </label>
                     <input
                       name="email"
@@ -150,14 +150,14 @@ class ContactUs extends React.Component {
                       onBlur={this.handleBlur}
                     />
                     {emailError ? (
-                      <div className="alert alert-danger mt-0">
+                      <div className="alert alert-danger mt-0 w-60">
                         Email is a required field.
                       </div>
                     ) : (
                       ""
                     )}
                     {emailError2 ? (
-                      <div className="alert alert-danger mt-0">
+                      <div className="alert alert-danger mt-0 w-60">
                         Email invalid.
                       </div>
                     ) : (
@@ -177,7 +177,7 @@ class ContactUs extends React.Component {
                 </div> */}
                   <div className="form-group my-3">
                     <label className="mb-3">
-                      Message<span className="text-danger">*</span>
+                      Message<span className="text-danger w-60">*</span>
                     </label>
                     <textarea
                       name="message"
@@ -189,14 +189,14 @@ class ContactUs extends React.Component {
                       onBlur={this.handleBlur}
                     />
                     {messageError ? (
-                      <div className="alert alert-danger mt-0">
+                      <div className="alert alert-danger mt-0 w-60">
                         Message is a required field.
                       </div>
                     ) : (
                       ""
                     )}
                   </div>
-                  <div className="text-center my-5">
+                  <div className="text-left my-5">
                     <span
                       //     href="
                       //   mailto:info@okteller.com"
@@ -210,6 +210,16 @@ class ContactUs extends React.Component {
                     </span>
                   </div>
                 </form>
+              </div>
+              <div>
+                <iframe
+                  title="Okteller Nigeria"
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d9386.554352089293!2d3.3355374871187764!3d6.5602015364408315!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x103b8d27acd7285d%3A0x6830cad9f459ea4c!2sVTU%20PROVIDER!5e0!3m2!1sen!2sng!4v1643236171599!5m2!1sen!2sng"
+                  // width="600"
+                  // height="450"
+                  allowfullscreen=""
+                  loading="lazy"
+                ></iframe>
               </div>
             </div>
           </Section>
@@ -234,21 +244,42 @@ export default ContactUs;
 const Section = styled.section`
   margin: 0px 0px 150px 0px;
   font-family: "Montserrat", sans-serif;
+
   .form__main-container {
+    display: flex;
+    flex-direction: row;
+    @media screen and (min-width: 320px) and (max-width: 846px) {
+      flex-direction: column;
+    }
+
+    iframe {
+      border: 0;
+      width: 100%;
+      height: 100%;
+    }
     .form__container {
       h3 {
-        text-align: center;
+        text-align: left;
         margin: 25px 0px;
         font-family: "Montserrat", sans-serif;
         color: var(--fourth__color);
       }
     }
     .form__main-box {
-      border: 2px solid var(--fourth__color);
       border-radius: 8px;
+      width: 50% !important;
+      @media screen and (min-width: 320px) and (max-width: 846px) {
+        width: 100% !important;
+      }
       form {
         color: var(--fourth__color);
-        .form-group-container {
+        .form-group {
+          input {
+            width: 60%;
+          }
+          textarea {
+            width: 60%;
+          }
           label {
             .span__text {
             }

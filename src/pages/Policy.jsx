@@ -8,7 +8,7 @@ function Policy() {
       <Section>
         <h1> TERMS OF USE AND POLICY</h1>
         <div>
-          <h2>ACCEPTANCE OF TERMS</h2>
+          <h6>ACCEPTANCE OF TERMS</h6>
           <p>
             OKTELLER provides a collection of online resources which includes
             but not limited to airtime recharge/Virtual Top Up, bills payment,
@@ -26,7 +26,7 @@ function Policy() {
           </p>
         </div>
         <div>
-          <h2>MODIFICATIONS TO THIS AGREEMENT</h2>
+          <h6>MODIFICATIONS TO THIS AGREEMENT</h6>
           <p>
             We reserve the right, at our sole discretion, to change, modify or
             otherwise alter these terms and conditions at any time. Such
@@ -37,7 +37,7 @@ function Policy() {
         </div>
 
         <div>
-          <h2>FUNDING OF ACCOUNT/WALLET (Money Deposit)</h2>
+          <h6>FUNDING OF ACCOUNT/WALLET (Money Deposit)</h6>
           <p>
             You understand that all money deposited are final and cannot be
             reversed.
@@ -45,7 +45,7 @@ function Policy() {
         </div>
 
         <div>
-          <h2>NOTIFICATION OF CLAIMS OF INFRINGEMENT</h2>
+          <h6>NOTIFICATION OF CLAIMS OF INFRINGEMENT</h6>
           <p>
             If you believe that your work has been copied in a way that
             constitutes copyright infringement, or your intellectual property
@@ -83,7 +83,7 @@ function Policy() {
         </div>
 
         <div>
-          <h2>PRIVACY AND INFORMATION DISCLOSURE</h2>
+          <h6>PRIVACY AND INFORMATION DISCLOSURE</h6>
           <p>
             You can browse our sites without telling us who you are or revealing
             any personal information about yourself. Once you give us your
@@ -129,7 +129,7 @@ function Policy() {
         </div>
 
         <div>
-          <h2>CONDUCT</h2>
+          <h6>CONDUCT</h6>
           <p>
             You agree not to post, email, or otherwise make available Content:
             <ul>
@@ -263,7 +263,7 @@ function Policy() {
         </div>
 
         <div>
-          <h2>POSTING AGENTS</h2>
+          <h6>POSTING AGENTS</h6>
           <p>
             A "Posting Agent" is a third-party agent, service, or intermediary
             that offers to post Content to the Service on behalf of others. To
@@ -274,7 +274,7 @@ function Policy() {
         </div>
 
         <div>
-          <h2>NO SPAM POLICY</h2>
+          <h6>NO SPAM POLICY</h6>
           <p>
             You understand and agree that sending unsolicited email
             advertisements to OKTELLER email addresses or through OKTELLER
@@ -286,7 +286,7 @@ function Policy() {
         </div>
 
         <div>
-          <h2>ACCESS TO THE SERVICE</h2>
+          <h6>ACCESS TO THE SERVICE</h6>
           <p>
             OKTELLER grants you a limited, revocable, non-exclusive license to
             access the Service for your own personal use. This license does not
@@ -305,7 +305,7 @@ function Policy() {
         </div>
 
         <div>
-          <h2>TERMINATION OF SERVICE</h2>
+          <h6>TERMINATION OF SERVICE</h6>
           <p>
             You agree that OKTELLER, in its sole discretion, has the right (but
             not the obligation) to delete or deactivate your account, block your
@@ -320,7 +320,7 @@ function Policy() {
         </div>
 
         <div>
-          <h2>PROPRIETARY RIGHTS</h2>
+          <h6>PROPRIETARY RIGHTS</h6>
           <p>
             The Service is protected to the maximum extent permitted by
             copyright laws. Content displayed on or through the Service is
@@ -340,7 +340,7 @@ function Policy() {
         </div>
 
         <div>
-          <h2>DISCLAIMER OF WARRANTIES</h2>
+          <h6>DISCLAIMER OF WARRANTIES</h6>
           <p>
             You agree that use of the OKTELLER website and the service is
             entirely at your own risk. OKTELLER site and the service are
@@ -359,7 +359,7 @@ function Policy() {
         </div>
 
         <div>
-          <h2>LIMITATIONS OF LIABILITY</h2>
+          <h6>LIMITATIONS OF LIABILITY</h6>
           <p>
             Under no circumstances shall OKTELLER be liable for direct,
             indirect, incidental, special, consequential or exemplary damages
@@ -373,7 +373,7 @@ function Policy() {
         </div>
 
         <div>
-          <h2>INDEMNITY</h2>
+          <h6>INDEMNITY</h6>
           <p>
             You agree to indemnify and hold OKTELLER, its officers,
             subsidiaries, affiliates, successors, assigns, directors, officers,
@@ -388,7 +388,7 @@ function Policy() {
         </div>
 
         <div>
-          <h2>GENERAL INFORMATION</h2>
+          <h6>GENERAL INFORMATION</h6>
           <p>
             The TOU constitute the entire agreement between you and OKTELLER and
             govern your use of the Service, superseding any prior agreements
@@ -407,7 +407,7 @@ function Policy() {
         </div>
 
         <div>
-          <h2>VIOLATION OF TERMS AND LIQUIDATED DAMAGES</h2>
+          <h6>VIOLATION OF TERMS AND LIQUIDATED DAMAGES</h6>
           <p>
             Please report any violations of the TOU, by flagging the posting(s)
             for review. Our failure to act with respect to a breach by you or
@@ -473,7 +473,7 @@ const Section = styled.section`
     border-bottom: 0.2px solid var(--first__color);
     margin-bottom: 100px;
     padding-bottom: 25px;
-    h2 {
+    h6 {
       font-family: "Montserrat", sans-serif;
       color: var(--third__color);
     }

@@ -21,6 +21,9 @@ import smile from "../assets/smile.jpg";
 import waec from "../assets/waec.jpg";
 import SmileBack from "../assets/smile-telecoms-logo-article.jpg";
 import EkoBack from "../assets/Eko-Electricity-Distribution-Company-EKEDC-logo-e1519905030183-300x142.jpg";
+import webdev from "../assets/WEBDEV.jpeg";
+import graphics from "../assets/graphics.jpeg";
+import google from "../assets/googlevoice.jpeg";
 const ServicesData = [
   {
     id: 1,
@@ -172,17 +175,17 @@ const ServicesData = [
     title: "How To Animate In Maya",
     text: "#100-#50,000",
   },
-  // {
-  //   id: 15,
-  //   category: "TV SUBSCRIPTIONS",
-  //   imageFront: EtisalatFront,
-  //   imageBack: EtisalatBack,
-  //   productsName: "9Mobile",
-  //   link1: "https://www.google.com",
-  //   link2: "https://www.google.com",
-  //   title: "How To Animate In Maya",
-  //   text: "#100-#50,000",
-  // },
+  {
+    id: 15,
+    category: "IT",
+    imageFront: google,
+    imageBack: google,
+    productsName: "Google Voice",
+    //   link1: "https://www.google.com",
+    //   link2: "https://www.google.com",
+    //   title: "How To Animate In Maya",
+    //   text: "#100-#50,000",
+  },
   {
     id: 16,
     category: "EDUCATION",
@@ -204,6 +207,28 @@ const ServicesData = [
     link2: "https://www.google.com",
     title: "How To Animate In Maya",
     text: "#100-#50,000",
+  },
+  {
+    id: 18,
+    category: "IT",
+    imageFront: webdev,
+    imageBack: webdev,
+    productsName: "Web dev",
+    //   link1: "https://www.google.com",
+    //   link2: "https://www.google.com",
+    //   title: "How To Animate In Maya",
+    //   text: "#100-#50,000",
+  },
+  {
+    id: 19,
+    category: "IT",
+    imageFront: graphics,
+    imageBack: graphics,
+    productsName: "Web dev",
+    //   link1: "https://www.google.com",
+    //   link2: "https://www.google.com",
+    //   title: "How To Animate In Maya",
+    //   text: "#100-#50,000",
   },
 ];
 

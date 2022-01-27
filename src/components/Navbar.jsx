@@ -13,7 +13,7 @@ function Navbar() {
         <div className="brand">
           <Link to="/" className="container">
             <img src={logo} alt="OKteller" className="logo" />
-            OKteller
+            OKteller Nigeria
           </Link>
 
           <div className="toggle">
@@ -40,10 +40,22 @@ function Navbar() {
             <Link to="/policy">Policy</Link>
           </li>
           <li>
-            <Link to="/SMS">SMS</Link>
+            <a
+              href="http://sms.okteller.com.ng/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              SMS
+            </a>
           </li>
           <li>
-            <Link to="/policy">Login</Link>
+            <a
+              href="https://vtu.okteller.com.ng/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Login
+            </a>
           </li>
         </ul>
       </Nav>
@@ -86,22 +98,26 @@ function Navbar() {
             </Link>
           </li>
           <li>
-            <Link
-              to="/SMS"
+            <a
+              href="http://sms.okteller.com.ng/"
+              target="_blank"
+              rel="noopener noreferrer"
               className="sidebar__link"
               onClick={() => setNavbarState(false)}
             >
               SMS
-            </Link>
+            </a>
           </li>
           <li>
-            <Link
-              to="/login"
+            <a
+              href="https://vtu.okteller.com.ng/"
+              target="_blank"
+              rel="noopener noreferrer"
               className="sidebar__link"
               onClick={() => setNavbarState(false)}
             >
               Login
-            </Link>
+            </a>
           </li>
         </ul>
       </ResponsiveNav>

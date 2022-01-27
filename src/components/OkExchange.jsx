@@ -8,7 +8,7 @@ function OkExchange() {
       <Section>
         <h1> We Offer!</h1>
         <div>
-          <h2>BITCOIN</h2>
+          <h6>BITCOIN</h6>
           <p>
             OKEXCHANGE enable you to turn your cryptocurrency (i.e bitcoin,
             ether,etc) bit and bulk into cash with sweet rate and fastest
@@ -25,7 +25,7 @@ function OkExchange() {
           </p>
         </div>
         <div>
-          <h2>GIFT CARDS</h2>
+          <h6>GIFT CARDS</h6>
           <p>
             So you’re looking for a trusted site to sell iTunes gift card for
             Naira. Or not just itunes gift card? Maybe you need to sell amazon
@@ -48,7 +48,7 @@ function OkExchange() {
         </div>
 
         <div>
-          <h2>What is OK Exchange?</h2>
+          <h6>What is OK Exchange?</h6>
           <p>
             OK Exchange is an online gift card exchange where users can easily
             sell iTunes card and other gift cards for Naira. Now here is the
@@ -69,7 +69,7 @@ function OkExchange() {
         </div>
 
         <div>
-          <h2>Selling iTunes Gift Card On OK Exchange</h2>
+          <h6>Selling iTunes Gift Card On OK Exchange</h6>
           <p>
             For convenience sake, we have broken down the types of iTunesgift
             cards Igctrader accepts into different categories based on the
@@ -78,7 +78,7 @@ function OkExchange() {
         </div>
 
         <div>
-          <h2>Denomination</h2>
+          <h6>Denomination</h6>
           <p>
             Although iTunes gift cards come in various denominations, we have
             small denominations like $1-$100. We have big single denominations
@@ -111,7 +111,7 @@ const Section = styled.section`
     border-bottom: 0.2px solid var(--first__color);
     margin-bottom: 100px;
     padding-bottom: 25px;
-    h2 {
+    h6 {
       font-family: "Montserrat", sans-serif;
       color: var(--third__color);
     }
